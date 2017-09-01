@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    tools:context="com.example.android.myprofile.MainActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/mybackground"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+
+    <ImageView
+        android:background="#CFD8DC"
+        android:src="@drawable/app"
+        android:id="@+id/meal_image_order"
+        android:layout_gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="5dp" />
+
+
+    <TextView
+
+        android:text="Emem Jonah"
+        android:layout_gravity="center"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" />
+
+    <TextView
+        android:text="  Slack Handle: @Emiqueena   "
+        android:textSize="18dp"
+        android:textColor="#FFFFFF"
+        android:paddingBottom="8dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="Emem is a tech enthusiast and has a flare
+ for sport. She loves meeting new people"
+        android:textStyle="bold"
+        android:background="#CFD8DC"
+        android:textSize="15dp"
+        android:textColor="#004D40"
+        android:paddingLeft="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+    <ImageButton
+        android:onClick="openEmail"
+        android:id="@+id/mail"
+        android:src="@drawable/mail"
+        android:layout_margin="25dp"
+        android:scaleType="centerCrop"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+
+        <ImageButton
+            android:onClick="openLinkedin"
+         android:id="@+id/link"
+         android:src="@drawable/link"
+         android:layout_margin="5dp"
+         android:scaleType="centerCrop"
+         android:layout_width="60dp"
+         android:layout_height="60dp"
+         android:layout_toRightOf="@id/mail"/>
+
+        <ImageButton
+            android:onClick="openTwitter"
+            android:id="@+id/twit"
+            android:src="@drawable/twit"
+            android:layout_margin="25dp"
+            android:scaleType="centerCrop"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_toRightOf="@id/link"/>
+
+        <ImageButton
+            android:onClick="openFacebook"
+            android:id="@+id/fb"
+            android:src="@drawable/fb"
+            android:layout_margin="5dp"
+            android:scaleType="centerCrop"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_toRightOf="@id/twit"/>
+
+        <TextView
+            android:id="@+id/contact"
+            android:text="Let's stay in touch!"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="90dp"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:background="#000000"
+            android:textColor="#E3F2FD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/link" />
+
+    </RelativeLayout>
+
+</LinearLayout>
